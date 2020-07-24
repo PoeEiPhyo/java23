@@ -75,7 +75,8 @@ public class Shop extends Customer{
 		sd=DiscountRate.getServiceDiscountRate(customer1.memberType);
 		pd=DiscountRate.getProductDiscountRate(customer1.memberType);
 		Shop sh=new Shop(customer1.name,customer1.memberType,new Date("1/1/2020"));
-		double result1=sh.getTotalExpense(1000.0, 1000.0);		
+		double result1=sh.getTotalExpense(1000.0, 1000.0);
+		System.out.println("ServiceExpense:"+1000.0+"\nProductExpense:"+1000.0);
 		System.out.println(customer1.name+"\n"+sh.date+"\n"+customer1.memberType+"\n"+result1);
 		System.out.println();
 		
@@ -83,7 +84,8 @@ public class Shop extends Customer{
 		sd=DiscountRate.getServiceDiscountRate(customer2.memberType);
 		pd=DiscountRate.getProductDiscountRate(customer2.memberType);
 		sh=new Shop(customer2.name,customer2.memberType,new Date("5/10/2020"));
-		double result2=sh.getTotalExpense(10000.0, 10000.0);		
+		double result2=sh.getTotalExpense(1000.0, 1000.0);	
+		System.out.println("ServiceExpense:"+1000.0+"\nProductExpense:"+1000.0);
 		System.out.println(customer2.name+"\n"+sh.date+"\n"+customer2.memberType+"\n"+result2);
 		System.out.println();
 		
@@ -91,7 +93,8 @@ public class Shop extends Customer{
 		sd=DiscountRate.getServiceDiscountRate(customer3.memberType);
 		pd=DiscountRate.getProductDiscountRate(customer3.memberType);		
 		sh=new Shop(customer3.name,customer3.memberType,new Date("7/20/2020"));
-		double result3=sh.getTotalExpense(5000.0, 5000.0);		
+		double result3=sh.getTotalExpense(1000.0, 1000.0);		
+		System.out.println("ServiceExpense:"+1000.0+"\nProductExpense:"+1000.0);
 		System.out.println(customer3.name+"\n"+sh.date+"\n"+customer3.memberType+"\n"+result3);
 		System.out.println();
 		
