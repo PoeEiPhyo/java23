@@ -58,7 +58,7 @@ public class Shop{
 	double productExpense=0.0;
 	
 	public Shop(String name,String type,Date date) {
-		super(name,type);
+		super();
 		this.date=date;
 	}
 	public double getTotalExpense(double sexp,double pexp) {
