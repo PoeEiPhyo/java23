@@ -52,7 +52,7 @@ class DiscountRate{
 		return product;
 	}
 }
-public class Shop extends Customer{
+public class Shop{
 	public Date date;
 	double serviceExpense=0.0;
 	double productExpense=0.0;
