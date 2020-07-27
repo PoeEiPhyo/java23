@@ -2,6 +2,30 @@ package SecondExercise;
 
 class Author{
 	public String name;
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public char getGender() {
+		return gender;
+	}
+
+	public void setGender(char gender) {
+		this.gender = gender;
+	}
+
 	public String email;
 	public char gender;
 	
@@ -17,9 +41,7 @@ public class Book{
 	double price;
 	int qty=0;
 	Author author;
-	public Author getAuthor() {
-		return author;
-	}
+	
 	public Book(String name,Author author,double price){
 		super();
 		this.name=name;
@@ -36,10 +58,10 @@ public class Book{
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Author a=new Author("Juu","juu@gmail.com",'F');
-		Book b=new Book("A Mataya",a,5000,1);
-		System.out.println("Author is \'"+a.name+"\'\t,"+a.email+"\t,"+a.gender);
+		Book b=new Book("AMataya",a,5000,1);
+		System.out.println("Author is \'"+a.getName()+"\'\t,"+a.getEmail()+"\t,"+a.getGender());
 		System.out.println();
-		System.out.println("Book is \'"+b.name+"\'\t,"+b.price+"\t,"+b.qty);
+		System.out.println("Book is \'"+b.name+"\' of \'"+a.getName()+"\' is "+b.price+" for "+b.qty);
 	}
 }
 
